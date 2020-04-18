@@ -41,7 +41,7 @@ WHERE
 --	Запит 3 - Вивести середній рівень задоволення активно працюючих професіоналів в кожному департаменті всіх компаній
 
 SELECT
-    rec_source, department, ROUND(AVG(employee_satisfaction), 1) AS avg_level
+    department, ROUND(AVG(employee_satisfaction), 1) AS avg_level
 FROM Department
     JOIN Employee ON Employee.department_id = Department.department_id
     JOIN EmploymentStatus ON EmploymentStatus.employment_status_id = Employee.employment_status_id
@@ -51,6 +51,6 @@ WHERE
     employment_status = 'Active'
     AND (perf_score = 'Fully Meets' OR perf_score = 'Exceeds')
 GROUP BY
-    rec_source, department
+    department
 ORDER BY
-    avg_level;
+    avg_level DESC;
