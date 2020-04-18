@@ -1,5 +1,7 @@
-DELETE FROM Employee;
+SET DEFINE OFF;
+
 DELETE FROM EmployeeTerminated;
+DELETE FROM Employee;
 DELETE FROM TerminationStatus;
 DELETE FROM EmploymentStatus;
 DELETE FROM EmploymentPosition;

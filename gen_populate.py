@@ -124,8 +124,9 @@ with open("HRDataset_v13.csv") as file:
             ]
 
 with open("populate.sql", "w") as script_file:
-    script_file.write("""DELETE FROM Employee;
+    script_file.write("""SET DEFINE OFF;\n
 DELETE FROM EmployeeTerminated;
+DELETE FROM Employee;
 DELETE FROM TerminationStatus;
 DELETE FROM EmploymentStatus;
 DELETE FROM EmploymentPosition;
