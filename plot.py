@@ -44,7 +44,7 @@ fig1 = go.Figure(data=go.Bar(x=fig1_x, y=fig1_y), layout=go.Layout(
 ))
 print(" Done", flush=True)
 print("Plotting figure...", end="", flush=True)
-plot1_url = py.plot(fig1, filename="DB_Laboratory_1_plot1")
+plot1_url = py.plot(fig1, filename="DB_Laboratory_2_plot1")
 print(" Done", flush=True)
 
 
@@ -80,7 +80,7 @@ print("Creating figure...", end="", flush=True)
 fig2 = go.Figure(data=go.Pie(values=fig2_values, labels=fig2_labels))
 print(" Done", flush=True)
 print("Plotting figure...", end="", flush=True)
-plot2_url = py.plot(fig2, filename="DB_Laboratory_1_plot2")
+plot2_url = py.plot(fig2, filename="DB_Laboratory_2_plot2")
 print(" Done", flush=True)
 
 
@@ -118,7 +118,7 @@ fig3 = go.Figure(data=go.Bar(x=fig3_x, y=fig3_y), layout=go.Layout(
 ))
 print(" Done", flush=True)
 print("Plotting figure...", end="", flush=True)
-plot3_url = py.plot(fig3, filename="DB_Laboratory_1_plot3")
+plot3_url = py.plot(fig3, filename="DB_Laboratory_2_plot3")
 print(" Done", flush=True)
 
 
