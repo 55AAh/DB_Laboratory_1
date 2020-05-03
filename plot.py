@@ -149,5 +149,5 @@ box_3 = {
 my_dboard.insert(box_1)
 my_dboard.insert(box_2, "below", 1)
 my_dboard.insert(box_3, "left", 2)
-py.dashboard_ops.upload(my_dboard, "DB_Laboratory_1")
+py.dashboard_ops.upload(my_dboard, "DB_Laboratory_2")
 print(" Done", flush=True)
